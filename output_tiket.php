@@ -53,9 +53,10 @@
     $total = $harga * $jumlah_tiket;
     ?>
 
-    <table border="2" bgcolor="white" align="center">
+    <table border="0" bgcolor="white" align="center">
         <tr>
-            <td colspan="3">BUKTI PEMBAYARAN TIKET KERETA API</td>
+            <td colspan="3">BUKTI PEMBAYARAN TIKET KERETA API <br> 
+            ----------------------------------------------------------</td>
         </tr>
         <tr>
             <td>Nama Customer</td>

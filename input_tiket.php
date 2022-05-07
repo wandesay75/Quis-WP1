@@ -48,7 +48,7 @@
             </tr>
             <tr>
                 <td>Jumlah Tiket</td>
-                <td><input type="text" name="jumlah_tiket" placeholder="masukan jumlah tiket" maxlength="50" required></td>
+                <td><input type="number" name="jumlah_tiket" placeholder="masukan jumlah tiket" maxlength="50" required></td>
             </tr>
             <tr>
                 <td align="center" colspan="2">
