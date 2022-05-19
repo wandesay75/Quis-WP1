@@ -104,9 +104,10 @@
             <td><?php echo $total ?></td>
         </tr>
         <tr>
-            <td align="center">
+            <td align="center" colspan="3">
                 <button type="submit" value="kembali">Kembali</button>
             </td>
+        </tr>
     </table>
 </form>
 </body>
