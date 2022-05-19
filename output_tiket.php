@@ -23,25 +23,25 @@
     }
 
     if ($jurusan=="Cikampek-Tuparev") {
-        if ("busines") {
+        if ($jenis_pelayanan=="busines") {
             $harga = 20000;
-        } elseif ("executive") {
+        } elseif ($jenis_pelayanan=="executive") {
             $harga = 30000;
         } else {
             echo "layanan tidak ditemukan";
         }
     } elseif ($jurusan=="Johar-Bypass") {
-        if ("busines") {
+        if ($jenis_pelayanan=="busines") {
             $harga = 10000;
-        } elseif ("executive") {
+        } elseif ($jenis_pelayanan=="executive") {
             $harga = 20000;
         } else {
             echo "layanan tidak ditemukan";
         }
     } elseif ($jurusan=="Klari-Badami") {
-        if ("busines") {
+        if ($jenis_pelayanan=="busines") {
             $harga = 15000;
-        } elseif ("executive") {
+        } elseif ($jenis_pelayanan=="executive") {
             $harga = 25000;
         } else {
             echo "layanan tidak ditemukan";
@@ -52,7 +52,7 @@
 
     $total = $harga * $jumlah_tiket;
     ?>
-
+<form action="input_tiket.php">
     <table border="0" bgcolor="white" align="center">
         <tr>
             <td colspan="3">BUKTI PEMBAYARAN TIKET KERETA API <br> 
@@ -103,9 +103,11 @@
             <td>:</td>
             <td><?php echo $total ?></td>
         </tr>
+        <tr>
+            <td align="center">
+                <button type="submit" value="kembali">Kembali</button>
+            </td>
     </table>
-    <div align="center">
-    <a href="input_tiket.php" align="center"><button><span>Input Kembali</span></button></a>
-    </div>
+</form>
 </body>
 </html>
